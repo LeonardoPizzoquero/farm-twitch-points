@@ -1,0 +1,33 @@
+{
+  "name": "Farm Twitch Points",
+  "version": "1.0.0",
+  "description": "Farm twitch points from your favorite streamer",
+  "permissions": ["activeTab", "*://www.twitch.tv/*", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "512": "icons/icons8-twitch-512.png",
+    "256": "icons/icons8-twitch-256.png",
+    "128": "icons/icons8-twitch-128.png",
+    "64": "icons/icons8-twitch-64.png",
+    "48": "icons/icons8-twitch-48.png",
+    "32": "icons/icons8-twitch-32.png",
+    "16": "icons/icons8-twitch-16.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "512": "icons/icons8-twitch-512.png",
+      "256": "icons/icons8-twitch-256.png",
+      "128": "icons/icons8-twitch-128.png",
+      "64": "icons/icons8-twitch-64.png",
+      "48": "icons/icons8-twitch-48.png",
+      "32": "icons/icons8-twitch-32.png",
+      "16": "icons/icons8-twitch-16.png"
+    }
+  },
+  "manifest_version": 2
+}
